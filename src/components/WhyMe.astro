@@ -1,0 +1,87 @@
+---
+const features = [
+	{
+		title: 'Clean Code',
+		description: 'Writing maintainable, scalable code following best practices and modern standards.',
+		icon: '⚡'
+	},
+	{
+		title: 'Responsive Design',
+		description: 'Pixel-perfect layouts that work flawlessly across all devices and screen sizes.',
+		icon: '📱'
+	},
+	{
+		title: 'Modern Stack',
+		description: 'Leveraging cutting-edge technologies and frameworks for optimal performance.',
+		icon: '🔧'
+	},
+	{
+		title: 'Fast Delivery',
+		description: 'Efficient workflow and agile methodology ensuring timely project completion.',
+		icon: '⚡'
+	}
+];
+---
+
+<section id="about" class="min-h-screen py-20 px-6 bg-gradient-to-b from-black to-gray-dark">
+	<div class="container mx-auto">
+		<div class="max-w-4xl mx-auto space-y-16">
+			<div class="text-center space-y-6">
+				<h2 class="text-4xl md:text-6xl font-bold tracking-wider" style="font-family: var(--font-gothic);">
+					Why Me
+				</h2>
+				<div class="h-1 w-24 bg-white mx-auto"></div>
+				<p class="text-lg text-gray-light leading-relaxed max-w-2xl mx-auto">
+					I bring a unique blend of technical expertise and creative vision to every project. With a foundation in modern frontend development and an eye for detail, I transform concepts into powerful digital experiences that leave a lasting impact.
+				</p>
+			</div>
+
+			<div class="grid md:grid-cols-2 gap-8">
+				{features.map((feature, index) => (
+					<div
+						class="group bg-black border-2 border-white p-8 hover:bg-white hover:text-black transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(61,61,61,1)] hover:shadow-[12px_12px_0px_0px_rgba(133,133,133,1)] hover:translate-x-[-2px] hover:translate-y-[-2px]"
+						style={`animation: fade-slide-in 0.6s ease-out ${index * 0.2}s both;`}
+					>
+						<div class="space-y-4">
+							<div class="text-4xl">{feature.icon}</div>
+							<h3 class="text-2xl font-bold uppercase tracking-wider">
+								{feature.title}
+							</h3>
+							<p class="text-gray-light group-hover:text-gray-dark transition-colors duration-300">
+								{feature.description}
+							</p>
+						</div>
+					</div>
+				))}
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-8 pt-12">
+				<div class="text-center space-y-2 border-2 border-white p-6 hover:bg-white hover:text-black transition-all duration-300 group">
+					<div class="text-4xl md:text-5xl font-bold" style="font-family: var(--font-gothic);">2+</div>
+					<div class="text-gray-light group-hover:text-gray-dark uppercase tracking-wider">Years Experience</div>
+				</div>
+				<div class="text-center space-y-2 border-2 border-white p-6 hover:bg-white hover:text-black transition-all duration-300 group">
+					<div class="text-4xl md:text-5xl font-bold" style="font-family: var(--font-gothic);">50+</div>
+					<div class="text-gray-light group-hover:text-gray-dark uppercase tracking-wider">Projects Completed</div>
+				</div>
+				<div class="text-center space-y-2 border-2 border-white p-6 hover:bg-white hover:text-black transition-all duration-300 group">
+					<div class="text-4xl md:text-5xl font-bold" style="font-family: var(--font-gothic);">100%</div>
+					<div class="text-gray-light group-hover:text-gray-dark uppercase tracking-wider">Client Satisfaction</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	@keyframes fade-slide-in {
+		from {
+			opacity: 0;
+			transform: translateX(-30px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+</style>

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-gray-dark: #3d3d3d;
+  --color-gray-light: #858585;
+
+  --font-gothic:  'Pirata One', system-ui
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
