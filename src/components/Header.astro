@@ -1,51 +1,138 @@
 ---
+
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-dark transition-all duration-300">
-	<nav class="container mx-auto px-6 py-4">
-		<div class="flex items-center justify-between">
-			<a href="#home" class="text-2xl font-bold tracking-wider hover:text-gray-light transition-colors duration-300" style="font-family: var(--font-gothic);">
-				RM
-			</a>
+<header
+    class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-dark transition-all duration-300"
+>
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <a
+                href="#home"
+                aria-label="Home"
+                class="text-2xl font-bold tracking-wider hover:text-gray-light transition-colors duration-300"
+                style="font-family: var(--font-gothic);"
+            >
+                RM
+            </a>
 
-			<ul class="hidden md:flex items-center gap-8">
-				<li><a href="#home" class="hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider">Home</a></li>
-				<li><a href="#about" class="hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider">Why Me</a></li>
-				<li><a href="#services" class="hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider">Services</a></li>
-				<li><a href="#portfolio" class="hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider">Portfolio</a></li>
-				<li><a href="#contact" class="bg-white text-black px-6 py-2 hover:bg-gray-light hover:text-white transition-all duration-300 shadow-lg hover:shadow-2xl">Contact</a></li>
-			</ul>
+            <ul class="hidden md:flex items-center gap-8">
+                <li>
+                    <a
+                        href="#home"
+                        aria-label="Home"
+                        class="hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider"
+                        >Home</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#about"
+                        aria-label="About"
+                        class="hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider"
+                        >Why Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#services"
+                        aria-label="Services"
+                        class="hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider"
+                        >Services</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#portfolio"
+                        aria-label="Portfolio"
+                        class="hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider"
+                        >Portfolio</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#contact"
+                        aria-label="Contact"
+                        class="bg-white text-black px-6 py-2 hover:bg-gray-light hover:text-white transition-all duration-300 shadow-lg hover:shadow-2xl"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
 
-			<button class="md:hidden text-white" id="mobile-menu-button">
-				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-				</svg>
-			</button>
-		</div>
+            <button class="md:hidden text-white" id="mobile-menu-button">
+                <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="square"
+                        stroke-linejoin="miter"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
 
-		<div class="hidden md:hidden mt-4 pb-4" id="mobile-menu">
-			<ul class="flex flex-col gap-4">
-				<li><a href="#home" class="block hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider">Home</a></li>
-				<li><a href="#about" class="block hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider">Why Me</a></li>
-				<li><a href="#services" class="block hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider">Services</a></li>
-				<li><a href="#portfolio" class="block hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider">Portfolio</a></li>
-				<li><a href="#contact" class="block bg-white text-black px-6 py-2 hover:bg-gray-light hover:text-white transition-all duration-300 text-center">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
+        <div class="hidden md:hidden mt-4 pb-4" id="mobile-menu">
+            <ul class="flex flex-col gap-4">
+                <li>
+                    <a
+                        href="#home"
+                        aria-label="home"
+                        class="block hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider"
+                        >Home</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#about"
+                        aria-label="about"
+                        class="block hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider"
+                        >Why Me</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#services"
+                        aria-label="services"
+                        class="block hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider"
+                        >Services</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#portfolio"
+                        aria-label="portfolio"
+                        class="block hover:text-gray-light transition-colors duration-300 text-sm uppercase tracking-wider"
+                        >Portfolio</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#contact"
+                        aria-label="contact"
+                        class="block bg-white text-black px-6 py-2 hover:bg-gray-light hover:text-white transition-all duration-300 text-center"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <script>
-	const mobileMenuButton = document.getElementById('mobile-menu-button');
-	const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-	mobileMenuButton?.addEventListener('click', () => {
-		mobileMenu?.classList.toggle('hidden');
-	});
+    mobileMenuButton?.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+    });
 
-	document.querySelectorAll('#mobile-menu a').forEach(link => {
-		link.addEventListener('click', () => {
-			mobileMenu?.classList.add('hidden');
-		});
-	});
+    document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+            mobileMenu?.classList.add("hidden");
+        });
+    });
 </script>
