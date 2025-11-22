@@ -1,20 +1,35 @@
 @import "tailwindcss";
 
-
 @theme {
-  --color-primary: #000000;
-  --color-secondary: #ffffff;
-  --color-gray-dark: #3d3d3d;
-  --color-gray-light: #858585;
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+    --color-gray-dark: #3d3d3d;
+    --color-gray-light: #858585;
 
-  --font-gothic:  'Pirata One', system-ui
+    --font-gothic: "Pirata One", system-ui;
+
+    @keyframes fade-in-up {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Class animasi harus di luar @theme */
+.animate-fade-in-up {
+    animation: fade-in-up 0.7s ease-out forwards;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
